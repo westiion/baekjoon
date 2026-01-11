@@ -1,0 +1,19 @@
+# 세 정수를 입력받아 중앙값 구하기1
+
+def mid(a,b,c):
+    if a>=b:
+        if b>=c:
+            return b
+        elif a>=c:
+            return c
+        else:
+            return a
+
+    elif a>c:
+        return a
+    elif c>b:
+        return b
+    else:
+        return c
+
+print(mid(1,2,3)
