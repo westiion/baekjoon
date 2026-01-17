@@ -1,8 +1,8 @@
 import sys
-n=int(sys.stdin.readline())
-nums=[]
+input=sys.stdin.readline
+n=int(input())
+results=[]
 for _ in range(n):
-    a,b=map(int,sys.stdin.readline().split())
-    nums.append(a+b)
-
-print('\n'.join(str(i) for i in nums))
+    a,b=map(int,input().split())
+    results.append(str(a+b))
+print('\n'.join(results))
